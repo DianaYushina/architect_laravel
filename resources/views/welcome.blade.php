@@ -1,265 +1,156 @@
 @extends('layouts.app')
-@section('first_part')
-    <div class="first-part-about">
-	<div class="text-style-p1-about">
-		<h1 class="big-text-about">COMPANY DY</h1> 
-	</div>
-	<!-- <div class="button_style_p1-about">
-		<a class="button-a-about" id="button-form-about" href="#">Contact us</a>
-	</div> -->
+
+@section('cover-text')
+<div class="text-style-p1-about extra-padding">
+    <h1 class="big-text-about">Будь в тренде вместе с - DY</h1>
 </div>
 @endsection
+
 @section('content')
-<div class="part2">
-    <div class="page2-style">
-    <div>
-        <img class="photo1"src="{{ asset('img/Rectangle 31.jpg') }}">
-        <img class="photo2"src="{{ asset('img/Rectangle 32.jpg') }}">
+<div class="style_box_for_our_history" id="history">
+    <div class="box_for_our_history">
+        <img class="photo_for_our_history" src="{{ asset ('img/подложка под текст наша истрория.png') }}">
     </div>
-    <div class="text-style-p2">
-        <h3>Here were the story begins</h3>
-        <div class="text-p2">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
-        <div class="text-p2">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
-    </div>
-    </div>
-</div>
 
-
-<div class="page3">
-    <div>
-        <h2 class="page3-h2">We love to make perfect home</h2>
-        <div class="text-style-p3">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
-    </div>
-    <div>
-        <img class="photo-page3" src="{{ asset('img/ryan-ancill-Vew4xyLkpdY-unsplash_1.jpg') }}">
+    <div class="text_box_for_our_history">
+        <div class="h2_black">Наша история</div>
+        <div class="text_black">Наша история начинается с 2006 года. Компания «DY» - это стремительно растущее, прогрессирующее предприятие, которая обладает широкими технологическими возможностями, различной номенклатурой изготовляемой продукции.</div>
+        <div class="text_black">На сегодняшний день компания «DY» является чрезвычайно прогрессирующей компанией, которая специализируется на изготовлении мебели европейского класса. Мы ориентируемся на клиентов, которые предпочитают прекрасное качество жизни и классическое дизайнерское решение.</div>
+        <div class="text_black">Название нашей компании - «DY» – образовано от инициалов основателя компании Diana Yshina (Диана Юшина)</div>
     </div>
 </div>
 
-
-<div class="page4">
-    <div class="p4-style">
-        <div class="photo-style-p4">
-            <div class="pho-p4">
-                <div>
-                    <img src="{{ asset('img/Rectangle 5.jpg') }}">
-                </div>
-                <div>
-                    <img src="{{ asset('img/Rectangle 8.jpg') }}">
-                </div>
-            </div>
-            <div class="pho-p4">
-                <div>
-                    <img src="{{ asset('img/Rectangle 6.jpg') }}">
-                </div>
-                <div>
-                    <img src="{{ asset('img/Rectangle 7.jpg') }} ">
-                </div>
-            </div>
-            <div class="log_p4">
-                <img class="img_pos_log_p4" src="{{ asset('img/log.png') }} ">
-            </div>
-        </div>
-
-        <div class="content_style">
-            <h3 class="h-style-p4">Our company</h3>
-            <div class="text-p4">Debuilds is a team of architects, interior design, and contractors who help our clients not only to build their dream building, but also to feel comfortable after the building is used.
-            </div>
-            <div class="text-p4">
-                We already handled
-            </div>
-            <div class="style_h5_p4">
-                <h5 class="h-style-p4">50+ Clients</h5>
-                <h5 class="h-style-p4">30+ House</h5>
-                <h5 class="h-style-p4">20+ Building</h5>
-            </div>
-            <!-- <div class="button-p4">
-                <a class="button-a-p4" href="#">See more</a>
-            </div> -->
-        </div> 
-    </div>
-</div>
-
-<div class="page5">
-    <div class="partner-style">
-        <div class="blue-word">Our Partners</div>
-        <div class="greey-word">J.construct</div>
-        <div class="greey-word">Arch</div>
-        <div class="greey-word">Whix.co</div>
-        <div class="bold-word">DZIKRA</div>
-    </div>
-
-    <div class="video-p5">
-        <iframe width="560" height="289" src="https://www.youtube.com/embed/g7Go_f4Wj9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="wrapper">
+    <div class="section2_style" id="production">
         <div>
-            <img class="photo_on-video" src="{{ asset('img/vid.png') }} ">
+            <img class="photo_our_workers" src="{{ asset ('img/фото наше производство.png') }}">
         </div>
-    </div>
-</div>
 
-<div class="page-6">
-    <div class="page-6-style">
-        <div class="text-style-p6">
-            <h3 class="h-style-p2">Villa De Borusdz</h3>
-            <div class="text-p6">
-                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        <div class="class_box_for_our_work">
+            <div class="h2_black">Наше производство</div>
+            <div class="text_black_2">В основе нашего производства мебели «DY» лежит принцип технологической специализации. Каждый участок производства осуществляет непосредственно свои определенные операции, при этом доводя их до совершенства. Наше оборудование для производства мебели позволяет обрабатывать детали с высокой точностью. Именно это и дало возможность за довольно короткий срок достичь очень высокого качества продукции и занять достойное положение в мебельной отрасли.</div>
+            <div class="orange_text_style">
+                <div class="orange_text">100+ продуктов</div>
+                <div class="orange_text">1000+ клиентов</div>
+                <div class="orange_text">100+ К</div>
             </div>
-            <div class="style_h5_p6">
-                <h5 class="h-style-p6">Budget : $90.000</h5>
-                <h5 class="h-style-p6">Time : 3 months</h5>
-            </div>
-        </div>
-        <div class="photo-style-p6">
-            <img src="{{ asset('img/img___.jpg') }}">
         </div>
     </div>
-    <div class="background-p6">
-        <div class="video-style-p6">
-            <iframe class="vi-p6" width="560" height="289" src="https://www.youtube.com/embed/T6LFQKbbEKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <div class="section2_style" id="company">
+        <div class="class_box_for_our_work2 text_none_mobile">
+            <div class="h2_black">Наша компания</div>
+            <div class="text_black_2">На сегодняшний день компания «DY» является чрезвычайно прогрессирующей компанией, которая специализируется на изготовлении мебели европейского класса. Мы ориентируемся на клиентов, которые предпочитают прекрасное качество жизни и классическое дизайнерское решение.</div>
+            <div class="text_black_2">Благодаря этому мебель для своего дома может купить каждый желающий по единой цене.</div>
+            <div class="orange_text_style">
+                <div class="orange_text">100+ продуктов</div>
+                <div class="orange_text">1000+ клиентов</div>
+                <div class="orange_text">100+ К</div>
+            </div>
         </div>
+       
         <div>
-            <img class="photo_on-video" src="{{ asset ('img/vid.png') }}">
+            <img class="photo_our_work" src="{{ asset ('img/фото наши работы.png') }}">
+        </div>
+
+
+        <div class="class_box_for_our_work2 text_none_desktop" id="company">
+            <div class="h2_black">Наша компания</div>
+            <div class="text_black_2">На сегодняшний день компания «DY» является чрезвычайно прогрессирующей компанией, которая специализируется на изготовлении мебели европейского класса. Мы ориентируемся на клиентов, которые предпочитают прекрасное качество жизни и классическое дизайнерское решение.</div>
+            <div class="text_black_2">Благодаря этому мебель для своего дома может купить каждый желающий по единой цене.</div>
+            <div class="orange_text_style">
+                <div class="orange_text">100+ продуктов</div>
+                <div class="orange_text">1000+ клиентов</div>
+                <div class="orange_text">100+ К</div>
+            </div>
         </div>
     </div>
 </div>
 
 
-<div class="page-7">
-    <div class="style-p7">
-        <div class="sub-style-p7">
-            <div>
-                <img class="main-ph-7" src=" {{ asset ('img/Rectangle 13.jpg') }}">
-            </div>
-            <div class="text-p7-h">Design building/house</div>
-            <div class="text2-p7-h">We have an architect for design new buildings</div>
-            <div>
-                <img class="ph-p7-1" src="{{ asset ('img/Vector.png') }}">
-            </div>
-        </div>
-        
-            <div class="sub-style-p7">
-            <div>
-                <img class="main-ph-7" src="{{ asset ('img/Rectangle blue 13.png') }}">
-            </div>
-            <div class="text-p7-h-2">Interior Design</div>
-            <div class="text2-p7-h-2">We have an interior designer for design your perfect inside house</div>
-            <div>
-                <img class="ph-p7-2" src="{{ asset ('img/Vector (1).png') }}">
-            </div>
-        </div>
-        
-        <div class="sub-style-p7">
-            <div>
-                <img class="main-ph-7" src="{{ asset ('img/Rectangle blue 13.png') }}">
-            </div>
-            <div class="text-p7-h-3">Build from scratch</div>
-            <div class="text2-p7-h-3">We have an contractor for build new building from scratch</div>
-            <div>
-                <img class="ph-p7-3" src="{{ asset ('img/Vector (2).png') }}">
-            </div>
-        </div>
+    <div class="section_3" id="page__section_4">
+        <div class="section_3_style">
+            <div class="orange_boxs">
+                <div>
+                    <img class="orange_photo" src="{{ asset ('img/orange_.png') }}">
+                </div>
 
-        <div class="sub-style-p7">
-            <div>
-                <img class="main-ph-7" src="{{ asset ('img/Rectangle blue 13.png') }}">
+                <div>
+                    <img class="orange_photo" src="{{ asset ('img/orange_.png') }}">
+                </div>
+
+                <div>
+                    <img class="orange_photo" src="{{ asset ('img/orange_.png') }}">
+                </div>
+
+                <div class="content_for_orange_box1">
+                    <div class="icons_style_for_orange_box">
+                        <img src="{{ asset ('img/icon_pensil.png') }}">
+                    </div>
+                    <div class="h4_white">Проектирование</div>
+                    <div class="text_white">Наша креативная команда дизайнеров и проектировщиков  создают мебель с использованием самых новейших технологий</div>
+                </div>
+
+                <div class="content_for_orange_box2">
+                    <div class="icons_style_for_orange_box">
+                        <img src="{{ asset ('img/icon_молоток.png') }}">
+                    </div>
+                    <div class="h4_white">Создание</div>
+                    <div class="text_white">Для создания нашего продукта мы используем только натуральное и качественное сырье.</div>
+                </div>
+
+                <div class="content_for_orange_box3">
+                    <div class="icons_style_for_orange_box">
+                        <img src="{{ asset ('img/icon_internet.png') }}">
+                    </div>
+                    <div class="h4_white">Интернет коммерция</div>
+                    <div class="text_white">Огромная команда креативных программистов, дизайнеров, маркетологов, кооператоров создают для Вас удобный, качественное и полезный сайт.</div>
+                </div>
             </div>
-            <div class="text-p7-h-4">Renovation</div>
-            <div class="text2-p7-h-4">We can also renovate or rebuilds new buildings/house</div>
-            <div>
-                <img class="ph-p7-4" src="{{ asset ('img/Vector (3).png') }}">
-            </div>
-        </div> 
+        </div>
     </div>
-</div>
 
+    <div class="section_4">
+        <div class="box_for_video">
+            <video class="video_work" controls="controls" poster="{{ asset ('img/photo_for_video.png') }}">
+                <source src="{{ asset ('img/video/woood.mp4') }}">
+            </video>    
 
-<div class="page-8">
-    <div class="text-style-p8">
-        <div class="text-p8-1">Our works</div>
-        <div class="text-p8-2">Here our some of the best the result when we build some buildings, houses, and also interior designs</div>
-    </div>
-    <div class="photo-style-p8-1">
-        <div class="photo-p8">
-            <img src="{{ asset ('img/Rectangle 15.jpg') }}"/>
-        </div>
-        <div class="photo-p8">
-            <img src="{{ asset ('img/Rectangle 16.jpg') }}" />
-        </div>
-        <div class="photo-p8">
-            <img src="{{ asset ('img/Rectangle 14.jpg') }}"/>
-        </div>
-        <div class="photo-p8">
-            <img src="{{ asset ('img/Rectangle 19.jpg') }}"/>
-        </div>
-        <div class="photo-p8">
-            <img src="{{ asset ('img/Rectangle 20.jpg') }}" />
+            <div class="instagram_text_style">
+                <div class="instagram_text">
+                    <a class="a_instagram_text" href="https://www.instagram.com/p/CbibBuIF26u/" target="_blank">
+                        <img  class="instagram_photo_text" src="{{ asset ('img/icon_instagram.png') }}">
+                     </a>
+                </div>
+            </div>
         </div>
     </div>
 
     
-        <div class="pos-photo-p8">
-            <img class="photo-p8" src="{{ asset ('img/Rectangle 22.jpg') }}"/>
-        </div>
 
-
-    <div class="photo-style-p8-2">
-        <div>
-            <img class="photo-p8-1-1" src="{{ asset ('img/Rectangle 18.jpg') }}"/>
-        </div>
-        <div>
-            <img class="photo-p8-2-2" src="{{ asset ('img/Rectangle 17.jpg') }}" />
-        </div>
-        <div>
-            <img class="photo-p8-3-3" src="{{ asset ('img/Rectangle 21.jpg') }}"/>
-        </div>
-    </div> 
-
-    <div class="border_p8-style">
-        <div class="border_p8"></div>
-    </div>
-
-    <div class="style-p8-photos-2">
-        <!-- <div>
-            <img class="po-photo-p8" src="media/img/Rectangle 111.jpg"/>
-            <div class="text-p8-1-photo">What our clients say?</div>
-            <div class="text-p8-2-photo">See what our clients say about their new home</div>
-            <div class="button-p8">
-                <a class="button-a-p8" href="#">See more</a>
-            </div> 
-        </div> -->
-
-        <div class="photo-position-p8">
-            <img src="{{ asset ('img/Rectangle 23.jpg') }}"/>
-        </div>
-    </div>
-    <div class="photo_with_man_p8">
-        <img class="style_photo_with_man_p8" src="{{ asset ('img/man.png') }}" />
-    </div>
-</div>
-
-    <div class="p-9">
-        <div class="p9-style">
-        <div class="p9-big-text">Want to get our offer updates and news?</div>
-        <div class="p9-text">Submit your e-mail and we will give you update about information and discount. Every single week. (not spamming)
-        </div>
-    </div>
-    <!-- <form class="form-style-p9">
-        <input class="input_style-p9" type="search" name="search" placeholder="Enter your e-mail here">
-        <button class="button-submit-p9" type="submit">Submit</button>
-    </form> -->
-
-    </div>
-
-<!-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">MAIN</div>
-
-                <div class="card-body">
-                    WELCOME TO WEBSITE
-                </div>
+    <div class="section5 page__section_5" id="partners">
+        <div class="h2_partners">Наши партнеры</div>
+        <div class="partners_style">
+            <div class="box_for_photo_partners">
+                <img  class="photo_partners" src="{{ asset ('img/partners/forest_icon.png') }}">
             </div>
+            <div class="box_for_photo_partners">
+                <img class="photo_partners" src="{{ asset ('img/partners/green_icon.png') }}">
+            </div>
+            <div class="box_for_photo_partners">
+                <img class="photo_partners"  src="{{ asset ('img/partners/house_icon.png') }}">
+            </div>
+            <div class="box_for_photo_partners">
+                <img class="photo_partners" src="{{ asset ('img/partners/men_icon.png') }}">
+            </div>
+            <div class="box_for_photo_partners">
+                <img class="photo_partners" src="{{ asset ('img/partners/peace_icon.png') }}">
+            </div>
+            
         </div>
     </div>
-</div> -->
+
+   
+
 @endsection

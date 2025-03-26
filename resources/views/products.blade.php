@@ -1,8 +1,70 @@
 @extends('layouts.app')
 
+@section('cover-text')
+<div class="text-style-p1-about">
+    <h1 class="big-text-about">Продукты</h1>
+</div>
+@endsection
+
 @section('content')
-<div class="p1-products">
-            <div class="main-photo-prod">
+    <section class="section1_products">
+        <div class="wrapper_products">
+            @foreach($products as $prod)
+                <div class="box_products">
+                    <div class="img_products_style">
+                        <img  class="img_products" src="{{ asset ($prod->picture) }}">
+                    </div>
+                    <div class="name_products">{{ $prod->name }}</div>
+                    <div class="style_border_products">
+                        <div class="border_products"></div>
+                    </div>
+                    <div class="small_description_products">{{ $prod->description_small }}</div>
+                    <div class="description_products">{{ $prod->description }}</div>
+                    <div class="style_photo_price">
+                        <div>
+                            <a class="addCart" id="good-{{ $prod->id }}-{{ $prod->price }}" href="#">
+                                <i id="basket_product_categories" class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                                <!-- <img class="photo_basket" src="{{ asset ('img/корзина иконка.png') }}"> -->
+                            </a>
+                        </div>
+                        <div>
+                            <div class="product_price">{{ $prod->price }} p.</div>
+                        </div>
+
+                    </div>
+
+                    <div class="price_on_photo">{{ $prod->status }} p.</div>
+
+                    <div>
+                        <form method="post" action="{{ asset('favorite/'.$prod->id) }}">
+                            @csrf
+                            <button type="submit" value="send">
+                                <span id="icon_like" class="material-symbols-outlined">heart_plus</span>
+                            </button>
+                        </form>
+                        <!-- <a href="{{ url('/favorite') }}">
+                            <span id="icon_like" class="material-symbols-outlined">heart_plus</span>
+                        </a> -->
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="p1-products"> -->
+            <!-- <div class="main-photo-prod">
                 <div class="main-text-prod">LOFT</div>
                 <div class="sub-text-prod">FIRNITURE</div>
                 <div class="small-sub-text-prod">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'</div>
@@ -16,12 +78,12 @@
                     </div>
                 </div>  
             </div> 
-        </div>
+        </div>  -->
 
 
 
 
-        <div class="p2-products">
+        <!-- <div class="p2-products">
             <div class="p2-tex-product">TRENDING</div>
             <div class="style_bord-p2-product">
                 <div class="bord-p2-product"></div>
@@ -69,11 +131,11 @@
                     <div class="text_style_p3_products">Modern Furniture</div>
                     <div class="text_style_p3_products2">Ed ea inciderint con cludatu alia assum assen tior id nec, duo debet mundi cons equnt rei. No sed regione sapient assentior, men itum.</div>
                 </div>
-            </div>
+            </div> -->
 
     
             
-            
+<!--             
             <div class="b-product-p2-style">
                 <div class="b-product-p2"></div>
             </div>
@@ -95,9 +157,9 @@
     
             
             <div class="bord-p2-product-main1">
-                <div class="photo-style-p2-produsts">
+                <div class="photo-style-p2-produsts"> -->
                 @foreach($products as $prod)
-                    <div class="s-f_p2_products">
+                    <!-- <div class="s-f_p2_products">
                         <img class="ph-p2-products" src="{{ asset($prod->picture) }}">
                         <a class="addCart" id="good-{{ $prod->id }}-{{ $prod->price }}" href="#">
                             <img class="pos-product-order" src="{{ asset('img/123.png') }}" width="40px">
@@ -106,9 +168,13 @@
                             <div class="t-product-p">{{ $prod->name }}</div>
                             <div class="price_product">${{ $prod->price }}</div>
                             <div class="text-product-p">{{ $prod->description_small }}</div>
-                            <div>
+                            <div>   -->
+
+
                                 <!-- <div class="stars-{{ $prod->stars }}"></div> -->
-                                <div class="material-icons">
+                                
+                                
+                                <!-- <div class="material-icons">
                                     <?php  
                                         echo str_repeat("star ", $prod->stars);
                                     ?>
@@ -686,6 +752,6 @@
         <div class="bord-p2-product-main1">
             <div class="photo-style-p2-produsts">
             </div>
-        </div>
+        </div> -->
 
 @endsection

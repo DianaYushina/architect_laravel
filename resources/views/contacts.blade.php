@@ -1,242 +1,75 @@
 @extends('layouts.app')
 
+@section('cover-text')
+<div class="text-style-p1-about">
+    <h1 class="big-text-about">Контакты</h1>
+</div>
+@endsection
+
 @section('content')
-<div class="p_contacts_p1">
-            
-            <div class="photo-contacts">
-                <img src="{{ asset ('img/webaliser-_TPTXZd9mOo-unsplash1.jpg') }}" width="1300px">
-            </div>
-            <div>
-                <img class="ph-1_p1_cont" src="{{ asset ('img/Vector 1.png') }}" width="650px"/>
-            </div>
-            <div class="main-text-p1_cont">
-                Need some consultation or want to collaborarion with us? Let’s connect!
-            </div>
-          
-                <div class="bord_cont-p1"></div>
-        
+    <section class="contacts_section">
+        <div class="wrapper_contacts">
+            <div class="contacts_style">
+                <div class="info_style_contacts">
+                    <div class="info_contacts">
+                        <div class="contacts_blok_1">
+                            <a class="a_contacts" href="tel:375256631518" target="_blank">
+                                <div class="icon_contacts"><span id="icon_contacts" class="material-symbols-outlined">phone_in_talk</span></div>
+                                <div class="text_contacts"><span class="bold_text_contacts">Контактный телефон:</span><br> +37525 663 15 18</div>
+                            </a>
+                        </div>
 
-            <div class="style_massang_of_contacts_p1_little">
-                <div class="text_of_contacts_p1_little">
-                     Contact us via e-mails or even mobile call or Instagram messages
-                 </div>
-                <div class="butt_content-p1_little">
-                    <div class="button-contacts-p1_little">
-                      <a class="style_a_p1_contacts_little" href="mailto:diana.yshina@gmail.com">Email</a>
-                    </div >
-                    <div class="button-contacts-p1_little">
-                       <a class="style_a_p1_contacts_little"  href="https://www.instagram.com/diana_yushyna/?hl=ru" arget="_blank">Instagram</a>
+                        <div class="contacts_blok_1">
+                            <a class="a_contacts" href="https://www.google.com/search?q=%D1%88%D0%BA%D0%BB%D0%BE%D0%B2+%D1%8F%D0%BA%D1%83%D0%B1%D0%B0+%D0%BA%D0%BE%D0%BB%D0%BE%D1%81%D0%B01&rlz=1C5CHFA_enBY878BY878&oq=%D1%88%D0%BA%D0%BB%D0%BE%D0%B2+%D1%8F%D0%BA%D1%83%D0%B1%D0%B0+%D0%BA%D0%BE%D0%BB%D0%BE%D1%81%D0%B01&aqs=chrome..69i57j33i10i160l5.10714j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+                                <div class="icon_contacts"><span id="icon_contacts"class="material-symbols-outlined">location_on</span></div>
+                                <div class="text_contacts"><span class="bold_text_contacts">Адрес:</span><br>Шклов, Якуба Коласа 1</div>
+                            </a>
+                        </div>
+
+                        <div class="contacts_blok_1">
+                            <a class="a_contacts" href="tel:375256631518" target="_blank">
+                                <div class="icon_contacts"><span class="material-symbols-outlined">phone_in_talk</span></div>
+                                <div class="text_contacts"><span class="bold_text_contacts">График работы: </span><br>Пн. - Пят. с 9.00 до 21.00 <br>Сб. - Вс. с 10.30 до 21.30</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="button-contacts-p1_little">
-                      <a class="style_a_p1_contacts_little"  href="tel:+375256631518">Phone</a>
+                    <div class="sosial_media_contacts">
+                        <div class="media_contacts">
+                            <a href="https://www.linkedin.com/in/diana-yushyna-785b281b7/" target="_blank">
+                                <img class="img_media" src="{{ asset ('img/in.svg') }}">
+                            </a>
+                        </div>
+
+                        <div class="media_contacts">
+                            <a href="https://t.me/Diana_Yshina" target="_blank">
+                                <img class="img_media" src="{{ asset ('img/telegram.svg') }}">
+                            </a>
+                        </div>
+
+                        <div class="media_contacts">
+                            <a href="https://www.instagram.com/diana_yushyna/" target="_blank">
+                                <img class="img_media" src="{{ asset ('img/instagram.svg') }}">
+                            </a>
+                        </div>
+
+                        <div class="media_contacts">
+                            <a href="https://www.behance.net/dianay_ushyna" target="_blank">
+                                <img class="img_media" src="{{ asset ('img/Be.svg') }}">
+                            </a>
+                        </div>
+
+                        <div class="media_contacts">
+                            <a href="https://www.pinterest.com/diana_yushyna/pins/" target="_blank">
+                                <img class="img_media" src="{{ asset ('img/Pinterest.svg') }}">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-         <div class="style_content_contact_p1">
-            <div class="content_contact_p1">
-                <div class="style-t-contact_p1">
-                    <div class="m-t-contact_p1">
-                        Let’s talk about anything you need
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                </div>
                 <div>
-                    <img src="{{ asset ('img/BG (1).png') }}">
+                    <img class="map_contacts" src="{{ asset ('img/map.png') }}">
                 </div>
             </div>
         </div>
-
-        <div class="style_content_contact_p1">
-            <div class="content_contact_p1">
-                <div>
-                    <img src="{{ asset ('img/BG__.png') }}">
-                </div>
-                <div class="style-t-contact_p1">
-                    <div class="m-t-contact_p1">
-                        Let’s talk about anything you need
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="style_content_contact_p1">
-            <div class="content_contact_p1">
-                <div class="style-t-contact_p1">
-                    <div class="m-t-contact_p1">
-                        Let’s talk about anything you need
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                </div>
-                <div>
-                    <img src="{{ asset ('img/BG (1).png') }}">
-                </div>
-            </div>
-        </div>
-
-        <div class="style_content_contact_p1">
-            <div class="content_contact_p1">
-                <div>
-                    <img src="{{ asset ('img/Rectangle__31.jpg') }}">
-                </div>
-                <div class="style-t-contact_p1">
-                    <div class="m-t-contact_p1">
-                        Let’s talk about anything you need
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="style_content_contact_p1">
-            <div class="content_contact_p1">
-                <div class="style-t-contact_p1">
-                    <div class="m-t-contact_p1">
-                        Let’s talk about anything you need
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                    <div class="t-contact_p1">
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </div>
-                    <div class="t-contact_p1">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    </div>
-                    <div class="t-contact_p1">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </div>
-                </div>
-                <div>
-                    <img src="{{ asset ('img/ryan-ancill-Vew4xyLkpdY-unsplash_1.jpg') }}">
-                </div>
-            </div>
-        </div>
-
-        <div class="style_border_for-contacts_p1">
-             <div class="border_for-contacts_p1"></div>
-        </div>
-
-        <div class="style_massang_of_contacts_p1">
-            <div class="text_of_contacts_p1">
-                Or contact us via e-mails or even mobile call or Instagram messages
-             </div>
-            <div class="butt_content-p1">
-                <div class="button-contacts-p1">
-                  <a class="style_a_p1_contacts" href="mailto:diana.yshina@gmail.com">Email</a>
-                </div >
-                <div class="button-contacts-p1">
-                   <a class="style_a_p1_contacts"  href="https://www.instagram.com/diana_yushyna/?hl=ru" target="_blank">Instagram</a>
-                </div>
-                <div class="button-contacts-p1">
-                  <a class="style_a_p1_contacts"  href="tel:+375256631518">Phone</a>
-                </div>
-            </div>
-        </div>
+    </section>
 @endsection

@@ -9,8 +9,13 @@ use App\Models\Product;
 
 class CategoriesController extends Controller
 {
-    public function getIndex() {
-        $categories = Category::all();
+    public function getIndex($id = -1) {
+        if ($id == -1) {
+            $categories = Category::all();
+        } else {
+            $categories = Category::where('id', $id)->get();
+        }
+        
         $products = Product::all();
 
         // $products = DB::table('products')
